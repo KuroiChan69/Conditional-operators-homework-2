@@ -48,11 +48,21 @@ public class Main {
         short currentYear=2024;
         boolean cond1=((currentYear%4)==0);
         boolean cond2=((currentYear%100)!=0);
-        if (cond1&&cond2){
-            System.out.println("Указан "+currentYear+"й год, и он является високосным");
+        boolean cond3=currentYear<1584;
+        if (cond3) {
+            System.out.println("В это время ещё не было понятия високосности");
         }
+       //такой пример ведь не является двойным вложением? Если первая проверка не прошла, то приступаем к блоку else
+        // и уже внутри него проверяем условия високосности.
         else {
-            System.out.println("указанный "+currentYear+"й год не является високосным.");
+            if (cond1 && cond2) {
+                System.out.println("Указан " + currentYear + "й год, и он является високосным");
+            }
+            else {
+                System.out.println("указанный " + currentYear + "й год, и он не является високосным.");
+            }
         }
+        System.out.println(" ");
+        System.out.println("Задача 4");
     }
 }
