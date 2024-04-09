@@ -29,7 +29,8 @@ public class Main {
                     break;
                 default:
                     System.out.println(" ваш аппарат не поддерживает актуальную версию приложения");
-            }
+            }}
+            else {
             switch (clientOS) {
                 case 0:
                     System.out.println("Ваш смартфон работает под управлением iOS");
