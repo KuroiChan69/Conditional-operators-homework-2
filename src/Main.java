@@ -50,7 +50,7 @@ public class Main {
         boolean cond1 = ((currentYear % 4) == 0);
         boolean cond2 = ((currentYear % 100) != 0);
         boolean cond3 = currentYear <= 1584;
-        boolean cond4 = ((currentYear % 400) != 0);
+        boolean cond4 = ((currentYear % 400) == 0);
         if (cond3) {
             System.out.println("В это время ещё не было понятия високосности");
         }
